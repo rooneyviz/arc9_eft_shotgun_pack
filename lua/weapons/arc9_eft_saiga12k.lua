@@ -153,7 +153,6 @@ SWEP.CamQCA_Mult = 0.36
 SWEP.MuzzleParticle = "muzzleflash_M3"
 SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_12x70_shell.mdl"
-SWEP.ShellScale = 1.5
 SWEP.ShellSounds = ARC9EFT.Shells12cal
 
 SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
