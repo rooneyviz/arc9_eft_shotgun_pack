@@ -762,7 +762,7 @@ ATT.ToggleStats = {
     },
     {
         PrintName = "Folded",
-        CustomizePos = Vector(21, 25, 2),
+        CustomizePos = Vector(21, 50, 4),
         ActivateElements = {"folded"}
     },
 }
