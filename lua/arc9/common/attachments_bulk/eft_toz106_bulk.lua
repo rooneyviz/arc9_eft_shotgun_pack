@@ -3,6 +3,7 @@ local ATT = {}
 local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
 local dmgrange_sg = (GetConVar("arc9_eft_mindmgrange_sg"):GetInt() or 100)/100
 local mult2070 = GetConVar("arc9_eft_mult_shotgun"):GetFloat() or 0.5
+local multexplosive = GetConVar("arc9_eft_mult_explosive") and GetConVar("arc9_eft_mult_explosive"):GetFloat() or 1
 
 
 ///////////////////////////////////////      eft_ammo_20x70_56
@@ -279,7 +280,7 @@ ATT.SpreadMult = 1.07
 ATT.MalfunctionMeanShotsToFailMult = 0.075
 
 
-ATT.ExplosionDamage = 55*5
+ATT.ExplosionDamage = 55*5 * multexplosive
 ATT.ExplosionRadius = 5
 ATT.ExplosionEffect = "eft_explosion_round"
 ATT.ImpactDecal = "FadingScorch"
