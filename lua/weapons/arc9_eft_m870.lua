@@ -77,7 +77,7 @@ SWEP.Ammo = "Buckshot"
 SWEP.SuppressEmptySuffix = false 
 SWEP.NoFiremodeWhenEmpty = true 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Pump-action" },
+    { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_pump") },
 }
 
 SWEP.SlamFire = true

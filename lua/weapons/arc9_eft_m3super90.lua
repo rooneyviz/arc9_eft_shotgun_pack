@@ -76,8 +76,8 @@ SWEP.Ammo = "Buckshot"
 SWEP.SuppressEmptySuffix = false 
 SWEP.NoFiremodeWhenEmpty = true 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Pump-action", EFTSingleAction = true, ManualAction = true, SuppressEmptySuffix = true, NoShellEject = true, RPM = 999, SlamFire = true, RecoilUpMult = 0.7 },
-    { Mode = 1, PrintName = "Semi auto", MalfunctionMeanShotsToFailMult = 0.8 },
+    { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_pump"), EFTSingleAction = true, ManualAction = true, SuppressEmptySuffix = true, NoShellEject = true, RPM = 999, SlamFire = true, RecoilUpMult = 0.7 },
+    { Mode = 1, MalfunctionMeanShotsToFailMult = 0.8 },
 }
 
 -- SWEP.ManualAction = true

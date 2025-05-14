@@ -76,8 +76,8 @@ SWEP.BarrelLength = 32
 SWEP.Ammo = "Buckshot"
 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Single shot" },
-    { Mode = 2, RunawayBurst = true, EFTFackyou = true, RecoilFirstShot = 0.01, RecoilAddShooting = 0.75, VisualRecoilAddShooting = 0.75, PrintName = "Double tap" },
+    { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_singleshot") },
+    { Mode = 2, RunawayBurst = true, EFTFackyou = true, RecoilFirstShot = 0.01, RecoilAddShooting = 0.75, VisualRecoilAddShooting = 0.75, PrintName = ARC9:GetPhrase("eft_fmode_doubletap") },
 }
 
 -- SWEP.SuppressEmptySuffix = true

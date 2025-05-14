@@ -71,8 +71,8 @@ SWEP.EFTErgo = 50
 SWEP.BarrelLength = 30
 SWEP.Ammo = "Buckshot"
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Single action", PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
-    { Mode = 1, PrintName = "Double action", PoseParam = 2  },
+    { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_singleaction"), PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
+    { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_doubleaction"), PoseParam = 2  },
 }
 
 SWEP.Slot = 3

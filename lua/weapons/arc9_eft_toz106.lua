@@ -81,7 +81,7 @@ SWEP.RPM = 450
 SWEP.EFTErgo = 60
 SWEP.BarrelLength = 30
 SWEP.Ammo = "Buckshot"
-SWEP.Firemodes = { { Mode = 1 } }
+SWEP.Firemodes = { { Mode = 1, PrintName = ARC9:GetPhrase("eft_fmode_bolt") } }
 
 SWEP.Slot = 1
 
