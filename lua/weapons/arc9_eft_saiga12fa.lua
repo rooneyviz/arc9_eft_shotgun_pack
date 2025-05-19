@@ -7,9 +7,9 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_saiga12kfa")
-SWEP.Description = "eft_weapon_saiga12kfa_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_saiga12kfa_desc")
 
-SWEP.Class = "eft_class_weapon_autosg"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_autosg")
 
 -- presets only with assualt rifle pack
 SWEP.StandardPresets = file.Exists("weapons/arc9_eft_akm.lua", "LUA") and {

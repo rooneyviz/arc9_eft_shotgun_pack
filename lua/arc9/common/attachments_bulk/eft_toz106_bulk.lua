@@ -584,7 +584,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Scope mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_toz106_mount2",
         Pos = Vector(-0.5, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -611,7 +611,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_sniper", "eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(-0.8, -1.5, 0),
         Ang = Angle(90, 180, 90),
@@ -741,13 +741,13 @@ ATT.Category = {"eft_toz106_stock"}
 ATT.ActivateElements = {"unfolded"}
 ATT.Attachments = {
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_toz106_pgrip",
         Pos = Vector(1.5, -1.5, 0),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Cheek rest",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = "eft_toz106_gpcp",
         Pos = Vector(0, -12, 0),
         Ang = Angle(0, -90, 0),
@@ -755,13 +755,13 @@ ATT.Attachments = {
 }
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.62,
         VisualRecoilMult = 0.62,
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         CustomizePos = Vector(21, 50, 4),
         ActivateElements = {"folded"}
     },

@@ -16,7 +16,7 @@ SWEP.CustomizePos = Vector(19.5, 35, 3)
 SWEP.CustomizeRotateAnchor = Vector(19.5, -4.28, -5.23)
 SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 
-SWEP.Description = "eft_weapon_mp43sawedoff_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mp43sawedoff_desc")
 
 SWEP.DefaultElements = {"eft_mr43_sawedoff"} 
 

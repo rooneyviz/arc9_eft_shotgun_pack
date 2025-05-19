@@ -10,7 +10,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp155")
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_mr155.mdl"
 
-SWEP.Description = "eft_weapon_mp155_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mp155_desc")
 
 SWEP.StandardPresets = {
     "[Ultima]XQAAAQAZAgAAAAAAAAA9iIIiM7tuo1AtT00OeFD3YPfocKoikvJMId48ZDBq+iHfog+A8c9A5B7hAB27XdX5qDS4/H3XqBOEbtI8BAsg2p2Pw8zGQ6zH/sO1g0PQ+9wFCOEEtKzrytxgs8iurX7yLP+Ox9VlNzUOnVLztzJdv7Np5bUfJJ5Lvnj3Xr+3VSgrWkEQDYNQgkyTthN9+2unnhLn3aXU/GLPyANj3SWBFLm0oajrWGY00mdgmrdTyPdWWn9TAQQLE6tMygA=",

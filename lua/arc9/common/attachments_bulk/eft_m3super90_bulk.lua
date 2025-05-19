@@ -24,7 +24,7 @@ ATT.Category = {"eft_m3s90_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = "eft_12ga_muzzle",
         Pos = Vector(-19.2, 0, 0.12),
         Ang = Angle(0, 0, 0),
@@ -78,7 +78,7 @@ ATT.CustomPros = { Ergonomics = "+10", ["Recoil while extended"] = "-30%" }
 ATT.ActivateElements = {"eft_m3s90_stock_unfolded"}
 ATT.Attachments = {
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_m3s90_pg",
         Pos = Vector(1, 0, 3),
         Ang = Angle(0, -90, 0),
@@ -86,12 +86,12 @@ ATT.Attachments = {
 }
 ATT.ToggleStats = {
     {
-        PrintName = "Extended",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.7,
         VisualRecoilMult = 0.7,
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(21, 25, 2),
         ActivateElements = {"eft_m3s90_stock_folded"}
     },
@@ -198,7 +198,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_m3s90_mount"}
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large_nosniper", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 0, -0.3),
         Ang = Angle(0, 0, 0),
@@ -373,7 +373,7 @@ ATT.Max = 1
 ATT.Category = {"eft_custom_slot_m3s90"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_slot_m3s90"},

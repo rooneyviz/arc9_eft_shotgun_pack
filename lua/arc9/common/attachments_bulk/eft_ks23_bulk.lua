@@ -116,7 +116,7 @@ ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_ks23_steel",
         Pos = Vector(1, 0, 3),
         Ang = Angle(0, -90, 0),
