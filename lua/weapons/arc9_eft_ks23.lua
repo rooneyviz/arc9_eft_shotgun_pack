@@ -302,7 +302,7 @@ local checkchamber = {
 }
 
 SWEP.Animations = {
-    ["idle"] = { Source = "idle", Time = 1111 }, -- remove TIME !!!!!!
+    ["idle"] = { Source = "idle" },
 
     ["ready"] = { Source = {"ready0","ready1","ready2"}, EventTable = {
         { s = path .. "mr133_draw.ogg", t = 0 },

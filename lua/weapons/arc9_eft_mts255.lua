@@ -519,7 +519,7 @@ local readya = {
 
 SWEP.Animations = {
     ["idle"] = { Source = "idle__0" },
-    ["idle__0"] = { Source = "idle__0", Time = 1000 },
+    ["idle__0"] = { Source = "idle__0" },
     ["idle__1"] = { Source = "idle__1" },
     ["idle__2"] = { Source = "idle__2" },
     ["idle__3"] = { Source = "idle__3" },

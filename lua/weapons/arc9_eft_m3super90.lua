@@ -391,7 +391,7 @@ local drawa = { { s = path .. "mr133_draw.ogg", t = 0 } }
 local holstera = { { s = path .. "mr133_holster.ogg", t = 0 } }
 
 SWEP.Animations = {
-    ["idle"] = { Source = "idle", Time = 1111 }, -- remove TIME !!!!!!
+    ["idle"] = { Source = "idle" },
     ["idle_empty"] = { Source = "idle_empty" },
 
     ["ready"] = { Source = {"ready0_sa","ready1_sa","ready2_sa"}, EventTable = readypa },
