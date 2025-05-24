@@ -567,7 +567,8 @@ ATT.ShellModelOddShot = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_
 
 
 ATT.HasAmmoooooooo = true 
-ATT.EFTRoundName = "12/70 makeshift .50 BMG / \"Poleva-3\" slug"
+-- ATT.EFTRoundName = "12/70 makeshift .50 BMG / \"Poleva-3\" slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_50bmg.printname") .. " / " .. ARC9:GetPhrase("eft_ammo_12x70_poleva3.printname")
 
 ATT.DamageMaxEvenShot = 140/2
 ATT.DamageMinEvenShot = 88/2

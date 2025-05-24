@@ -20,7 +20,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 5.6mm buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_56.printname")
 
 ATT.DamageMax = 26 * mult2070
 ATT.DamageMin = 14 * mult2070
@@ -58,7 +58,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 6.2mm buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_62.printname")
 
 ATT.DamageMax = 22 * mult2070
 ATT.DamageMin = 12 * mult2070
@@ -96,7 +96,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 7.3mm buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_73.printname")
 
 ATT.DamageMax = 23 * mult2070
 ATT.DamageMin = 12.5 * mult2070
@@ -134,7 +134,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 7.5mm buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_75.printname")
 
 ATT.DamageMax = 25 * mult2070
 ATT.DamageMin = 14 * mult2070
@@ -172,7 +172,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 Devastator slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_devastator.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70bh.mdl"
 
 ATT.DamageMax = 198 * mult2070
@@ -213,7 +213,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 Elephant killer slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_elephant.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70bh.mdl"
 
 ATT.DamageMax = 108 * mult2070
@@ -257,7 +257,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 \"explosive\" slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_explosive.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p6u.mdl"
 
 -- ATT.DamageMax = 51 * mult2070
@@ -312,7 +312,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 \"Flechetta Plus\""
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_flechplus.printname")
 
 ATT.DamageMax = 71 * mult2070
 ATT.DamageMin = 35 * mult2070
@@ -351,7 +351,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 \"Poleva-3\" slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_poleva3.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p3.mdl"
 
 ATT.DamageMax = 120 * mult2070
@@ -390,7 +390,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 \"Poleva-6u\" slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_poleva6u.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p6u.mdl"
 
 ATT.DamageMax = 135 * mult2070
@@ -429,7 +429,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "20/70 Star slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_star.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70star.mdl"
 
 ATT.DamageMax = 154 * mult2070

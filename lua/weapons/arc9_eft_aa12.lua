@@ -246,6 +246,7 @@ SWEP.BulletBones = {
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -289,14 +290,21 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 net.Send(swep:GetOwner())
             end
             
-        -- return anim .. ending .. (swep:Clip1() == 0 and "_empty" or "") .. (swep:GetEFTArmedDryfire() and "_empty" or "")
-        return anim .. ending .. (swep:Clip1() == 0 and "_empty" or "") .. (!swep:GetEFTArmedDryfire() and "_empty" or "")
+            -- return anim .. ending .. (swep:Clip1() == 0 and "_empty" or "") .. (swep:GetEFTArmedDryfire() and "_empty" or "")
+            return anim .. ending .. (swep:Clip1() == 0 and "_empty" or "") .. (!swep:GetEFTArmedDryfire() and "_empty" or "")
         else
             ending = rand
         end
         
         return anim .. ending .. (empty and "_empty" or "")
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
+        
+        if swep:GetEFTArmedDryfire() and swep:Clip1() == 0 then return "reload_tactical" .. ending end
+
         return anim .. (empty and "_empty" or "") .. (elements["mag20"] and 1 or "")
     end
 
@@ -492,6 +500,28 @@ SWEP.Animations = {
             { s =  path .. "aa12_hand.ogg", t = 2.8, v = 0.2 },
         },
     },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        RefillProgress = 0.675,
+        PeekProgress = 0.9,
+        MinProgress = 0.95,
+        FireASAP = true,
+        MagSwapTime = 1.33,
+        DropMagAt = 0.7,
+        EventTable = {
+            { s =  path .. "aa12_mag_out_0.ogg", t = 1.1-1 },
+            { s =  path .. "aa12_mag_rail_down.ogg", t = 1.22-1 },
+            { s =  path .. "aa12_flip_02.ogg", t = 1.76-1 },
+            { s = pouchout, t = 1.65-1 },
+            { s =  path .. "aa12_mag_in_fail.ogg", t = 2.49-1 },
+            { s =  path .. "aa12_mag_in_0.ogg", t = 2.88-0.05-1 },
+            { s =  path .. "aa12_hand.ogg", t = 3.2, v = 0.2-1 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.2}
+        },
+    },
     ["reload1"] = {
         Source = "reload1",
         RefillProgress = 0.7,
@@ -509,6 +539,28 @@ SWEP.Animations = {
             { s =  path .. "aa12_mag_in_fail.ogg", t = 2.2 },
             { s =  path .. "aa12_drum_in_0.ogg", t = 2.53-0.05 },
             { s =  path .. "aa12_hand.ogg", t = 2.91, v = 0.2 },
+        },
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        RefillProgress = 0.7,
+        PeekProgress = 0.9,
+        MinProgress = 0.95,
+        MagSwapTime = 1.33,
+        DropMagAt = 0.7,
+        FireASAP = true,
+        EventTable = {
+            { s =  path .. "aa12_flip_01.ogg", t = 0.92-1 },
+            { s =  path .. "aa12_drum_out_0.ogg", t = 1.22-1 },
+            { s =  path .. "aa12_flip_02.ogg", t = 1.82-1 },
+            { s = pouchout, t = 1.85-1 },
+            { s =  path .. "aa12_mag_in_fail.ogg", t = 2.71-1 },
+            { s =  path .. "aa12_drum_in_0.ogg", t = 3-0.04-1 },
+            { s =  path .. "aa12_hand.ogg", t = 3.4, v = 0.2-1 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.2}
         },
     },
 

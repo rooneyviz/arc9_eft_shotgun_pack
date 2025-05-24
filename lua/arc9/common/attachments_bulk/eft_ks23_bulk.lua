@@ -239,7 +239,7 @@ ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_23x75_sh10.mdl"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "23x75mm \"Shrapnel-10\" buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_sh10.printname")
 
 ATT.DamageMax = 87 * mult1270
 ATT.DamageMin = 66 * mult1270
@@ -277,7 +277,7 @@ ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_23x75_sh25.mdl"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "23x75mm \"Shrapnel-25\" buckshot"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_sh25.printname")
 
 ATT.DamageMax = 78 * mult1270
 ATT.DamageMin = 56.7 * mult1270
@@ -316,7 +316,7 @@ ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_23x75_bar.mdl"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "23x75mm \"Barrikada\" slug"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_bar.printname")
 
 ATT.DamageMax = 192 * mult1270
 ATT.DamageMin = 143.8 * mult1270
@@ -360,7 +360,7 @@ ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_23x75_zvezda.mdl"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "23x75mm \"Zvezda\" flashbang round"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_zvezda.printname")
 
 ATT.DamageMax = 0
 ATT.DamageMin = 0
