@@ -207,7 +207,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 then swep.EFTInspectnum = 0 rand = 0 end
 
         if rand == 0 then
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(true) -- accurate or not based on mag type
                 net.WriteUInt(math.min(clip , maxclip)+1, 9)

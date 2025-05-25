@@ -285,6 +285,7 @@ SWEP.ReloadHideBoneTables = {
         "patron_in_mag2"
     },
 }
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -314,7 +315,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
     
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -331,12 +332,18 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if anim == "reload" or anim == "reload_empty" then
         if nomag then return "reload" end
+        
+        if swep.EFT_StartedTacReload then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. ending
+        end
+
         return anim .. ending
     end
 
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -403,6 +410,17 @@ local rst_drop = {
     {hide = 0, t = 0},
     {hide = 1, t = 0.7},
     {hide = 0, t = 1.02}
+}
+
+local rst_tac = {
+    { s = randspin, t = 0.13 - 6/28 },
+    { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+    { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.93 - 6/28 },
+    { s = path .. "saiga_magin_plastic.ogg", t = 1.663 - 6/28 },
+    { s = randspin, t = 2.43 - 6/28 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.7- 6/28},
+    {hide = 0, t = 1.02- 6/28}
 }
 
 local rst_magcheck = {
@@ -490,6 +508,22 @@ SWEP.Animations = {
         },
         EventTable = rst_def,
     },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.89, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+        DropMagAt = 0.7- 6/28,
+        EventTable = rst_tac,
+    },
     ["reload_empty0"] = {
         Source = "reload0_empty",
         RefillProgress = 0.875,
@@ -520,6 +554,22 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
         EventTable = rst_def,
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.89, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+        DropMagAt = 0.7- 6/28,
+        EventTable = rst_tac,
     },
     ["reload_empty1"] = {
         Source = "reload1_empty",
@@ -559,6 +609,31 @@ SWEP.Animations = {
             { s = randspin, t = 2.9 },
         },
     },
+    ["reload_tactical2"] = {
+        Source = "reload2t",
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.87, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.99+0.3 - 6/28 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 - 6/28 },
+            { s = randspin, t = 3.25-0.45 - 6/28 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7- 6/28},
+            {hide = 0, t = 1.02- 6/28}
+        },
+        DropMagAt = 0.7- 6/28,
+    },
     ["reload4"] = {
         Source = "reload4",
         RefillProgress = 0.815,
@@ -580,6 +655,31 @@ SWEP.Animations = {
             { s = path .. "saiga_magin_plastic.ogg", t = 2.48 },
             { s = randspin, t = 2.9 },
         },
+    },
+    ["reload_tactical4"] = {
+        Source = "reload4t",
+        RefillProgress = 0.815,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 1,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.87, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+        EventTable = {
+            { s = randspin, t = 0.1 },
+            { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+            { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9+0.3 - 6/28 },
+            { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 - 6/28 },
+            { s = randspin, t = 3.25-0.45 - 6/28 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7- 6/28},
+            {hide = 0, t = 1.02- 6/28}
+        },
+        DropMagAt = 0.7- 6/28,
     },
     ["reload_empty2"] = {
         Source = "reload2_empty",

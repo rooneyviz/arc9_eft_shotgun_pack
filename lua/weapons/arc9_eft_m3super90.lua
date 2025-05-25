@@ -219,16 +219,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 0 then anim = (sa and "checkchamber_pa" or "checkchamber_sa") end
 
         if rand == 2 then
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(true) -- accurate or not based on mag type
                 net.WriteUInt(math.min(clip , maxclip), 9)
                 net.WriteUInt(maxclip, 9)
                 net.Send(swep:GetOwner())
-
-                anim = (sa and "mag_check_pa" or "mag_check_sa")
-                if clip == 1 then return "mag_check_pa_empty" end -- its in chamber but we'll play empty mag inspect anim with closed bolt
             end
+            anim = (sa and "mag_check_pa" or "mag_check_sa")
+            if clip == 1 then return "mag_check_pa_empty" end -- its in chamber but we'll play empty mag inspect anim with closed bolt
         elseif rand == 1 then
             anim = "look"
             if empty and sa then return "look_empty_pa" end -- to not play empty open bolt anim on pumpaction
@@ -301,7 +300,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         -- local rand = swep.EFTInspectnum
         -- if rand == 5 then swep.EFTInspectnum = 1 rand = 1 end
 
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(0.75, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")

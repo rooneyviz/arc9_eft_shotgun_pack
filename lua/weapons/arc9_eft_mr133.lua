@@ -212,7 +212,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 0 then anim = "checkchamber" end
 
         if rand == 2 then
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(true) -- accurate or not based on mag type
                 net.WriteUInt(math.min(clip , maxclip), 9)
@@ -250,7 +250,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "reload_end2"
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             timer.Simple(0.5, function()
                 if IsValid(swep) and IsValid(swep:GetOwner()) then
                     net.Start("arc9eftjam")
