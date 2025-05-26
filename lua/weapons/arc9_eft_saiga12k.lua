@@ -400,6 +400,7 @@ local rst_def = {
 local rst_drop = {
     { s = randspin, t = 0.1 },
     { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+    { s = path .. "saiga_magout_plastic.ogg", t = 0.3 },
     { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9 },
     { s = path .. "saiga_magin_plastic.ogg", t = 1.66 },
     -- { s = path .. "ak74_magrelease_button_hit.ogg", t = 1.91 },
@@ -415,6 +416,7 @@ local rst_drop = {
 local rst_tac = {
     { s = randspin, t = 0.13 - 6/28 },
     { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+    { s = path .. "saiga_magout_plastic.ogg", t = 0.3 - 6/28 },
     { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.93 - 6/28 },
     { s = path .. "saiga_magin_plastic.ogg", t = 1.663 - 6/28 },
     { s = randspin, t = 2.43 - 6/28 },
@@ -625,6 +627,7 @@ SWEP.Animations = {
         EventTable = {
             { s = randspin, t = 0.1 },
             { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.3 - 6/28 },
             { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.99+0.3 - 6/28 },
             { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 - 6/28 },
             { s = randspin, t = 3.25-0.45 - 6/28 },
@@ -672,6 +675,7 @@ SWEP.Animations = {
         EventTable = {
             { s = randspin, t = 0.1 },
             { s = path .. "saiga_magrelease_button.ogg", t = 0.3 - 6/28 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.3 - 6/28 },
             { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9+0.3 - 6/28 },
             { s = path .. "saiga_magin_plastic.ogg", t = 2.48-0.45 - 6/28 },
             { s = randspin, t = 3.25-0.45 - 6/28 },
@@ -699,6 +703,7 @@ SWEP.Animations = {
         EventTable = {
             { s = randspin, t = 0.1 },
             { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.3 },
             { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.99+0.3 },
 
             -- { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8-0.45 },
@@ -730,6 +735,7 @@ SWEP.Animations = {
         EventTable = {
             { s = randspin, t = 0.1 },
             { s = path .. "saiga_magrelease_button.ogg", t = 0.3 },
+            { s = path .. "saiga_magout_plastic.ogg", t = 0.3 },
             { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 0.9+0.3 },
             
             -- { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 1.8-0.45 },

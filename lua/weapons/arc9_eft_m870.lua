@@ -324,6 +324,11 @@ SWEP.Animations = {
         { s = randspin, t = 0.71 },
     } },
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
+    
     ["look"] = { Source = "look", MinProgress = 0.95, FireASAP = true, EventTable = look },
     ["look_empty"] = { Source = "look_empty", MinProgress = 0.95, FireASAP = true, EventTable = look },
 

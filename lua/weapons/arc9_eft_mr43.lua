@@ -286,6 +286,11 @@ SWEP.Animations = {
 
     ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr43_hammer_release.ogg", t = 0 } }, NoIdle = true },
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
+    
     ["look"] = { Source = "look", MinProgress = 0.95, FireASAP = true, EventTable = look },
     ["look_so"] = { Source = "look_so", MinProgress = 0.95, FireASAP = true, EventTable = look },
 
