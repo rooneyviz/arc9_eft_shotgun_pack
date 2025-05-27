@@ -214,17 +214,17 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/aa12/"
+local path = ")weapons/darsu_eft/aa12/"
 
-SWEP.ShootSound = {path .. "aa12_outdoor_close_loop1.ogg", path .. "aa12_outdoor_close_loop2.ogg", path .. "aa12_outdoor_close_loop3.ogg", path .. "aa12_outdoor_close_loop4.ogg"}
-SWEP.ShootSoundIndoor = {path .. "aa12_indoor_close_loop1.ogg", path .. "aa12_indoor_close_loop2.ogg", path .. "aa12_indoor_close_loop3.ogg", path .. "aa12_indoor_close_loop4.ogg"}
-SWEP.DistantShootSound = {path .. "aa12_outdoor_distant_loop1.ogg", path .. "aa12_outdoor_distant_loop2.ogg"}
-SWEP.DistantShootSoundIndoor = {path .. "aa12_indoor_distant_loop1.ogg", path .. "aa12_indoor_distant_loop2.ogg"}
+SWEP.ShootSound = {path .. "aa12_outdoor_close_loop1.wav", path .. "aa12_outdoor_close_loop2.wav", path .. "aa12_outdoor_close_loop3.wav", path .. "aa12_outdoor_close_loop4.wav"}
+SWEP.ShootSoundIndoor = {path .. "aa12_indoor_close_loop1.wav", path .. "aa12_indoor_close_loop2.wav", path .. "aa12_indoor_close_loop3.wav", path .. "aa12_indoor_close_loop4.wav"}
+SWEP.DistantShootSound = {path .. "aa12_outdoor_distant_loop1.wav", path .. "aa12_outdoor_distant_loop2.wav"}
+SWEP.DistantShootSoundIndoor = {path .. "aa12_indoor_distant_loop1.wav", path .. "aa12_indoor_distant_loop2.wav"}
 
-SWEP.ShootSoundSilenced = "weapons/darsu_eft/m870/mr133_fire_silenced_close.ogg" -- blehh no 870 and590 silenced sounds  btw this one cant have sil
-SWEP.ShootSoundSilencedIndoor = "weapons/darsu_eft/m870/mr133_fire_silenced_indoor_close.ogg"
-SWEP.DistantShootSoundSilenced = "weapons/darsu_eft/m870/mr133_fire_silenced_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = "weapons/darsu_eft/m870/mr133_fire_silenced_indoor_distant.ogg"
+SWEP.ShootSoundSilenced = ")weapons/darsu_eft/m870/mr133_fire_silenced_close.ogg" -- blehh no 870 and590 silenced sounds  btw this one cant have sil
+SWEP.ShootSoundSilencedIndoor = ")weapons/darsu_eft/m870/mr133_fire_silenced_indoor_close.wav"
+SWEP.DistantShootSoundSilenced = ")weapons/darsu_eft/m870/mr133_fire_silenced_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = ")weapons/darsu_eft/m870/mr133_fire_silenced_indoor_distant.wav"
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 

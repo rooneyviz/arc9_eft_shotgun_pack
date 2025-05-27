@@ -161,17 +161,17 @@ SWEP.ShellSounds = ARC9EFT.Shells12cal
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mr133/"
+local path = ")weapons/darsu_eft/mr133/"
 
 SWEP.ShootSound = { path .. "mr153_fire_close1.ogg", path .. "mr153_fire_close2.ogg" }
-SWEP.ShootSoundIndoor = path .. "mr153_fire_indoor_close.ogg"
+SWEP.ShootSoundIndoor = path .. "mr153_fire_indoor_close.wav"
 SWEP.DistantShootSound = { path .. "mr153_fire_distant1.ogg", path .. "mr153_fire_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = path .. "mr153_fire_indoor_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "mr153_fire_indoor_distant.wav"
 
 SWEP.ShootSoundSilenced = path .. "mr153_fire_silenced_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "mr153_fire_silenced_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "mr153_fire_silenced_indoor_close.wav"
 SWEP.DistantShootSoundSilenced = path .. "mr153_fire_silenced_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "mr153_fire_silenced_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "mr153_fire_silenced_indoor_distant.wav"
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -325,11 +325,11 @@ SWEP.Animations = {
     ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } }, Mult = 1.25, MinProgress = 0.5 },
     
 
-    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } }, NoIdle = true },
-    ["fire_empty"] = { Source = "fire_empty", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } }, NoIdle = true },
+    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
+    ["fire_empty"] = { Source = "fire_empty", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
 
-    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } } },
-    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } } },
+    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
+    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
 
     -- ["cycle"] = { Source = {"pump0", "pump1", "pump2"}, EventTable = {
     --     -- { s = randspin, t = 0.0 },

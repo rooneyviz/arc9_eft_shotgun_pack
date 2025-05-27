@@ -167,17 +167,17 @@ SWEP.ShellSounds = ARC9EFT.Shells12cal
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/m3s90/"
+local path = ")weapons/darsu_eft/m3s90/"
 
-SWEP.ShootSound = path .. "m3_fire_outdoor_close.ogg"
-SWEP.ShootSoundIndoor = path .. "m3_fire_indoor_close.ogg"
-SWEP.DistantShootSound = path .. "m3_fire_outdoor_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "m3_fire_indoor_distant.ogg"
+SWEP.ShootSound = path .. "m3_fire_outdoor_close.wav"
+SWEP.ShootSoundIndoor = path .. "m3_fire_indoor_close.wav"
+SWEP.DistantShootSound = path .. "m3_fire_outdoor_distant.wav"
+SWEP.DistantShootSoundIndoor = path .. "m3_fire_indoor_distant.wav"
 
-SWEP.ShootSoundSilenced = path .. "m3_fire_outdoor_silenced_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "m3_fire_indoor_silenced_close.ogg"
-SWEP.DistantShootSoundSilenced = path .. "m3_fire_outdoor_silenced_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "m3_fire_indoor_silenced_distant.ogg"
+SWEP.ShootSoundSilenced = path .. "m3_fire_outdoor_silenced_close.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "m3_fire_indoor_silenced_close.wav"
+SWEP.DistantShootSoundSilenced = path .. "m3_fire_outdoor_silenced_distant.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "m3_fire_indoor_silenced_distant.wav"
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -401,12 +401,12 @@ SWEP.Animations = {
     ["draw_empty"] = { Source = "draw_empty", EventTable = drawa },
     ["holster_empty"] = { Source = "holster_empty", EventTable = holstera },
 
-    ["fire_sa"] = { Source = "fire", EventTable = { { s = path .. "m3_hammer_release.ogg", t = 0 } } },
-    ["fire"] = { Source = "fire_sa", EventTable = { { s = path .. "m3_hammer_release.ogg", t = 0 } }, NoIdle = true },
-    ["fire_empty"] = { Source = "fire_salast", EventTable = { { s = path .. "m3_hammer_release.ogg", t = 0 } }, NoIdle = true },
+    ["fire_sa"] = { Source = "fire", EventTable = { { s = path .. "m3_hammer_release.wav", t = 0 } } },
+    ["fire"] = { Source = "fire_sa", EventTable = { { s = path .. "m3_hammer_release.wav", t = 0 } }, NoIdle = true },
+    ["fire_empty"] = { Source = "fire_salast", EventTable = { { s = path .. "m3_hammer_release.wav", t = 0 } }, NoIdle = true },
 
-    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "pm_trigger_empty.ogg", t = 0 } } },
-    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "pm_trigger_empty.ogg", t = 0 } } },
+    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "pm_trigger_empty.wav", t = 0 } } },
+    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "pm_trigger_empty.wav", t = 0 } } },
 
     ["cycle"] = { Source = {"pump0","pump1","pump2"}, EventTable = cycle, Mult = 0.8 },
     -- ["cycle"] = { Source = "pumpfast", EventTable = cycle, Mult = 1 },

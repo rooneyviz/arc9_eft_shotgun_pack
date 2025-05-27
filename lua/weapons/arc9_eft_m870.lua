@@ -169,7 +169,7 @@ SWEP.ShellSounds = ARC9EFT.Shells12cal
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/m870/"
+local path = ")weapons/darsu_eft/m870/"
 
 SWEP.ShootSound = { path .. "rem870_fire_close1.ogg", path .. "rem870_fire_close2.ogg" }
 SWEP.ShootSoundIndoor = path .. "rem870_fire_indoor_close.ogg"
@@ -313,9 +313,9 @@ SWEP.Animations = {
     ["draw"] = { Source = "draw", EventTable = { { s = path .. "mr133_draw.ogg", t = 0 } } },
     ["holster"] = { Source = "holster", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } } },
 
-    ["fire"] = { Source = "fire_sa", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } }, NoIdle = true },
+    ["fire"] = { Source = "fire_sa", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
 
-    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } } },
+    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
 
     ["cycle"] = { Source = {"pump0", "pump1", "pump2"}, EventTable = {
         { s = randspin, t = 0.05 },

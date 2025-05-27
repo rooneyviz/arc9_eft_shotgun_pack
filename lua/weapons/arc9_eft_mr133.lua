@@ -168,7 +168,7 @@ SWEP.ShellSounds = ARC9EFT.Shells12cal
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mr133/"
+local path = ")weapons/darsu_eft/mr133/"
 
 SWEP.ShootSound = { path .. "mr133_fire_close1.ogg", path .. "mr133_fire_close2.ogg" }
 SWEP.ShootSoundIndoor = path .. "mr133_fire_indoor_close.ogg"
@@ -317,11 +317,11 @@ SWEP.Animations = {
     ["draw_empty"] = { Source = "draw_empty", EventTable = { { s = path .. "mr133_draw.ogg", t = 0 } }, Mult = 1.25 },
     ["holster_empty"] = { Source = "holster_empty", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } }, Mult = 1.25, MinProgress = 0.5 },
     
-    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } }, NoIdle = true },
-    -- ["fire_empty"] = { Source = "fire_empty", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } }, NoIdle = true },
+    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
+    -- ["fire_empty"] = { Source = "fire_empty", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
 
-    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } } },
-    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "mr133_trigger.ogg", t = 0 } } },
+    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
+    ["dryfire_empty"] = { Source = "dryfire_empty", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
 
     ["cycle"] = { Source = {"pump0", "pump1", "pump2"}, EventTable = {
         { s = path .. "mr133_pump_in_fast.ogg", t = 0.08 },

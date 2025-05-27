@@ -168,7 +168,7 @@ SWEP.ShellCorrectAng = Angle(0, 180, 180)
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mr43/"
+local path = ")weapons/darsu_eft/mr43/"
 
 SWEP.ShootSound = { path .. "mr43_fire_close1.ogg", path .. "mr43_fire_close2.ogg" }
 SWEP.ShootSoundIndoor = path .. "mr43_fire_indoor_close1.ogg"
@@ -284,7 +284,7 @@ SWEP.Animations = {
     ["holster"] = { Source = "holster", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } } },
     ["holster_so"] = { Source = "holster_so", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } } },
 
-    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr43_hammer_release.ogg", t = 0 } }, NoIdle = true },
+    ["fire"] = { Source = "fire", EventTable = { { s = path .. "mr43_hammer_release.wav", t = 0 } }, NoIdle = true },
 
     ["inspect"] = { -- shutup arc9 we have inspect
         Source = "idle",
